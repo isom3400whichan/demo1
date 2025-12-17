@@ -31,7 +31,7 @@ with tab1:
     'Q3 2024': "$1.3M",
     'Q4 2024': "TBC"
     }
-  for quarters, revenue in sales_data:
+  for quarters, revenue in sales_data.items():
     st.write(f'{quarters}, {revenue}')
 
 # 4. Expander
