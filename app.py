@@ -14,7 +14,7 @@ st.number_input("Enter Monthly Sales Target (in USD):",
                 value =50000)
 
 st.selectbox("Select Region:", 
-             ["North", "South", "East", "West"]
+             ["North", "South", "East", "West"])
 
 if st.button("Submit"):
               st.button("Submitted!")
