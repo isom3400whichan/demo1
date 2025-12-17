@@ -10,18 +10,29 @@ st.write("Description blah blah blah")
 col1, col2, col3 = st.columns(3)
 with col1: 
   st.header("Q1 2024")
-  st.write("Q1: $1.2M")
+  st.write("Revenue: $1.2M")
 
 with col2: 
   st.header("Q2 2024")
-  st.write("Q2: $1.5M")
+  st.write("Revenue: $1.5M")
 
 with col3: 
   st.header("Q3 2024")
-  st.write("Q3: $1.3M")
+  st.write("Revenue: $1.3M")
   
 # 3. Tabs
 # TODO: Create tabs for Sales Data, Customer Insights, Market Trends
+tab1, tab2, tab3 = st.tabs(["Sales Data", "Customer Insights", "Market Trends"])
+with tab1:
+  st.write("Sales Data")
+  sales_data = {
+    'Q1 2024': "$1.2M",
+    'Q2 2024': "$1.5M",
+    'Q3 2024': "$1.3M",
+    'Q4 2024': "TBC"
+    }
+  for quarters, revenue in sales_data:
+    st.write(f'{quarters}, {revenue}')
 
 # 4. Expander
 # TODO: Add expander for additional info
