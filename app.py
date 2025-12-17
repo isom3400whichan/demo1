@@ -54,7 +54,7 @@ placeholder.write("Loading completed")
 # 6. Interactivity
 # TODO: Add selectbox and slider for revenue adjustment
 chosen_quarter = st.selectbox("Choose a quarter", 
-             ["Q1 2024", "Q2 2024", "Q3 2024", "Q4 2024"]
+             ["Q1 2024", "Q2 2024", "Q3 2024", "Q4 2024"])
 st.write(f"Revenue during {chosen_quarter} is {sales_data[chosen_quarter]}")
 
 # 7. Bonus
