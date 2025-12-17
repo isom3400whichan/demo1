@@ -11,7 +11,14 @@ col1, col2, col3 = st.columns(3)
 with col1: 
   st.header("Q1 2024")
   st.write("Q1: $1.2M")
-  
+
+with col2: 
+  st.header("Q2 2024")
+  st.write("Q2: $1.5M")
+
+with col3: 
+  st.header("Q3 2024")
+  st.write("Q3: $1.3M")
   
 # 3. Tabs
 # TODO: Create tabs for Sales Data, Customer Insights, Market Trends
