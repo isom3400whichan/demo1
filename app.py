@@ -53,3 +53,11 @@ with st.expander("More Information"):
 
 # Dynamic Containers
 placeholder = st.empty()
+
+# Simulate loading data and updating the placeholder
+for i in range(5):
+    placeholder.write(f"Loading data... {i*20}% complete")
+    time.sleep(1)
+
+# Once loading is complete, display the final message
+placeholder.write("Data loading complete. Displaying business insights.")
