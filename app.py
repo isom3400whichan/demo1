@@ -1,4 +1,5 @@
 import streamlit as st
+import time
 
 # 1. Dashboard Title and Objective
 # TODO: Add title and description
@@ -36,10 +37,19 @@ with tab1:
 
 # 4. Expander
 # TODO: Add expander for additional info
-st.expander("More Information', "Info on data collection")
+st.expander("More Information")
+st.write("Info on data collection")
 
 # 5. Dynamic Loading
 # TODO: Simulate loading and display insights
+placeholder = st.empty()
+
+for i in range(5):
+  placeholder.write(f"Loading data... {100/(5-i}% complete")
+  time.sleep(1)
+
+placeholder.write("Loading completed")
+
 
 # 6. Interactivity
 # TODO: Add selectbox and slider for revenue adjustment
