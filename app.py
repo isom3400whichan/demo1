@@ -45,7 +45,7 @@ st.write("Info on data collection")
 placeholder = st.empty()
 
 for i in range(5):
-  placeholder.write(f"Loading data... {100/(5-i}% complete")
+  placeholder.write(f"Loading data... {100/(5-i)}% complete")
   time.sleep(1)
 
 placeholder.write("Loading completed")
