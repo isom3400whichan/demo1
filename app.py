@@ -72,3 +72,7 @@ business_insights = [
 for insight in business_insights:
     placeholder.write(insight)
     time.sleep(2)
+
+with st.expander("More Information"):
+    st.write("Additional details on data collection methods.")
+    st.write("Data was collected through surveys and sales reports.")
