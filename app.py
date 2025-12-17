@@ -36,6 +36,7 @@ with tab1:
 
 # 4. Expander
 # TODO: Add expander for additional info
+st.expander("More Information', "Info on data collection")
 
 # 5. Dynamic Loading
 # TODO: Simulate loading and display insights
