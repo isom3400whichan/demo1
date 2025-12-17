@@ -17,6 +17,4 @@ st.selectbox("Select Region:",
              ["North", "South", "East", "West"])
 
 if st.button("Submit"):
-              st.button("Submitted!")
-
-st.success("Dashboard updated successfully!")
+              st.success("Dashboard updated successfully!")
