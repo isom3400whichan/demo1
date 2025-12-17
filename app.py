@@ -58,9 +58,9 @@ chosen_quarter = st.selectbox("Choose a quarter",
 st.write(f"Revenue during {chosen_quarter} is {sales_data[chosen_quarter]}")
 
 growth = st.slider("Adjust growth percentage:", 0, 50, 10)
-base_revenue = float(sales_data[selected_quarter].strip("$M"))
+base_revenue = float(sales_data[chosen_quarter].strip("$M"))
 adjusted_revenue = base_revenue * (1 + growth / 100)
-st.write(f"Adjusted Revenue for {selected_quarter}: ${adjusted_revenue:.2f}M")
+st.write(f"Adjusted Revenue for {chosen_quarter}: ${adjusted_revenue:.2f}M")
 
 # 7. Bonus
 # TODO: Add bar chart and motivational button
